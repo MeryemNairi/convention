@@ -4,8 +4,12 @@ export default function MaisonArtCulinaire() {
   return (
     <div>
       <h2>Convention de Partenariat entre CNEXIA et KITEA</h2>
+      <img
+        src="https://cnexia.sharepoint.com/sites/CnexiaForEveryone/_api/web/GetFolderByServerRelativeUrl('/sites/CnexiaForEveryone/Assets/Carrousel')/Files('KITEA.png')/$value" 
+        style={{ display: 'block', margin: '0 auto' }}
+      />
       <p><strong>Définition de la Convention:</strong> La convention établie entre CNEXIA et KITEA définit les modalités d'un partenariat visant à offrir des avantages aux collaborateurs de CNEXIA lors de leurs achats dans les magasins de KITEA au Maroc.</p>
-      
+
       <h3>Avantages offerts:</h3>
       <ul>
         <li>Pour les collaborateurs de CNEXIA : Ils bénéficient de remises sur les produits de KITEA, y compris les meubles en kit et les accessoires de décoration.</li>

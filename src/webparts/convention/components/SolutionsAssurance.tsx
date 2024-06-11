@@ -3,7 +3,8 @@ import * as React from 'react';
 function SolutionsAssurance() {
   return (
     <div>
-      <h1>Convention Assurance : Retraite Complémentaire</h1>
+      <h1>Convention Assurance : Retraite Complémentaire</h1> 
+      <img src="https://cnexia.sharepoint.com/sites/CnexiaForEveryone/_api/web/GetFolderByServerRelativeUrl('/sites/CnexiaForEveryone/Assets/Carrousel')/Files('lamarocainevie1.png')/$value" alt="Convention Image" />
       <p><strong>Définition :</strong><br/>
         La convention d'assurance Retraite Complémentaire vise à offrir aux employés de Dynamic Entreprise une assurance retraite par capitalisation. Elle est régie par la loi n° 17-99 portant code des assurances ainsi que par ses textes d'applications.
       </p>
@@ -32,6 +33,12 @@ function SolutionsAssurance() {
       </p>
       <hr />
       <h1>Assurance Wafa Assurance : Branche Groupe Prévoyance/Santé</h1>
+      <img
+          src="https://cnexia.sharepoint.com/sites/CnexiaForEveryone/_api/web/GetFolderByServerRelativeUrl('/sites/CnexiaForEveryone/Assets/Carrousel')/Files('wafaAssurance.png')/$value" alt="Convention Image"
+          width="350"
+          height="200"
+          style={{ display: 'block', margin: '0 auto' }}
+        />
       <p><strong>Définition :</strong><br/>
         L'assurance Wafa Assurance, branche Groupe Prévoyance/Santé, offre une couverture étendue pour les soins médicaux, la maternité et d'autres prestations de santé complémentaires. Cette assurance est régie par la police n°60/6164.04.
       </p>

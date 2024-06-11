@@ -89,9 +89,16 @@ export default function Convention() {
 
   return (
     <div style={{ display: 'flex', height: '100vh' }}>
-      <div style={{ width: '250px', borderRight: '1px solid #ccc', padding: '20px', backgroundColor: '#EEFFF6' }}>
+      <div style={{ width: '250px', borderRight: '1px solid #ccc', padding: '20px', backgroundColor: '#00966C' }}>
         {!categorySelected && (
           <div>
+            <svg width="172" height="60" viewBox="0 0 172 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M96.5175 21.3175V60H87.5555L70.5653 39.3893V60H59.8987V21.3175H68.8607L85.8509 41.9282V21.3175H96.5175Z" fill="#002920" />
+              <path d="M135.111 51.5465V60H104.214V21.3175H134.396V29.771H114.987V36.2906H132.084V44.4671H114.987V51.5409H135.111V51.5465Z" fill="#002920" />
+              <path d="M149.35 29.9972H137.53V21.3232H172V29.9972H160.236V60H149.35V29.9972Z" fill="#002920" />
+              <path d="M40.6075 7.37913L47.9493 0H56.27C58.3122 0 59.9662 1.66243 59.9662 3.71501V12.078L52.5682 19.5137V9.68617C52.5682 8.40825 51.533 7.37348 50.2615 7.37913H40.6075Z" fill="white" />
+              <path d="M24.6864 60C18.1266 60 11.9381 57.4102 7.25738 52.7057C2.57665 48.0011 0 41.7812 0 35.188C0 28.5949 2.57665 22.3749 7.25738 17.6704C11.9381 12.9658 18.1266 10.376 24.6864 10.376V20.7973C20.8945 20.7973 17.3108 22.3014 14.5879 25.0382C11.865 27.775 10.3685 31.3769 10.3685 35.188C10.3685 38.9992 11.865 42.6011 14.5879 45.3379C17.3108 48.0746 20.8945 49.5788 24.6864 49.5788C28.4782 49.5788 32.0619 48.0746 34.7848 45.3379C37.5077 42.6011 39.0042 38.9992 39.0042 35.188H49.3727C49.3727 41.7812 46.7961 48.0011 42.1153 52.7057C37.4346 57.4102 31.2461 60 24.6864 60Z" fill="#002920" />
+            </svg>
 
           </div>
         )}
@@ -121,6 +128,7 @@ export default function Convention() {
       <div style={{ flex: 1, padding: '20px', overflowY: 'auto' }}>
         {categorySelected ? (
           <>
+
             <h1>{selectedCategory}</h1>
             {selectedCategory === 'Hôtels  & Voyages' && <HotelsVoyages />}
             {selectedCategory === 'Services Bancaires' && <ServicesBancaires />}
@@ -133,12 +141,35 @@ export default function Convention() {
           <div>
             <h1><strong>Découvrez l'univers des conventions avec Cnexia</strong></h1>
             <img src="https://cnexia.sharepoint.com/sites/CnexiaForEveryone/_api/web/GetFolderByServerRelativeUrl('/sites/CnexiaForEveryone/Assets')/Files('convetion.jpg')/$value" alt="Convention Image" />
-            <p  style={{ fontSize: '18px', fontWeight: 'bold' }} >
-              Les conventions sont des occasions inestimables de réseautage, d'apprentissage et de croissance. Que vous soyez un professionnel chevronné ou un nouvel arrivant dans votre domaine, participer à des conventions vous permet de rester à jour avec les dernières tendances, de rencontrer des experts et d'échanger des idées innovantes.
+            <p style={{
+              fontSize: '15px',
+              fontWeight: '400'             }}>
+              Chers collaborateurs,<br /><br />
+
+              Nous sommes heureux de vous informer que, grâce à des conventions établies avec différents établissements, vous pouvez désormais bénéficier de divers avantages et remises simplement en présentant votre badge professionnel. Ces conventions ont été mises en place pour vous offrir des opportunités supplémentaires de bien-être et d'économie au quotidien.<br /><br />
+
+              <h3>Comment bénéficier des avantages ?</h3>
+              <p>
+                1. Vérifiez les établissements partenaires<br />
+                2. Prenez connaissance des offres<br />
+                3. Présentez votre badge<br />
+              </p>
+
+              <h3>Avantages des conventions</h3>
+              <p>
+                · Économies : Profitez de réductions significatives sur une variété de produits et services, allant de l'alimentation aux loisirs, en passant par le bien-être et la technologie.<br />
+                · Simplicité : L'accès aux avantages est direct et ne nécessite aucune démarche compliquée. La présentation de votre badge suffit.<br />
+                · Variété : Les conventions couvrent un large éventail d'établissements et de services, vous permettant de trouver des offres pertinentes pour presque tous vos besoins.<br />
+              </p>
+
+              <h3>Important à retenir</h3>
+              <p>
+                · Les offres peuvent varier selon les périodes et les établissements. Il est donc crucial de vérifier les conditions spécifiques de chaque offre avant d'en profiter.<br />
+                · En cas de doute ou pour toute question relative aux conventions et aux avantages, n'hésitez pas à contacter le service des ressources humaines.
+              </p>
             </p>
-            <p  style={{ fontSize: '18px' ,fontWeight: 'bold'}}>
-              Nous vous invitons à parcourir nos différentes catégories de conventions pour trouver celle qui correspond le mieux à vos intérêts et objectifs professionnels. Que vous soyez intéressé par la technologie, le marketing, la finance ou d'autres domaines, nous avons des conventions conçues spécialement pour répondre à vos besoins. Explorez dès maintenant et découvrez les opportunités qui vous attendent !
-            </p>
+
+
           </div>
         )}
       </div>

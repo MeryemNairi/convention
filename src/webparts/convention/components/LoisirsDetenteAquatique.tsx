@@ -5,6 +5,12 @@ export default function LoisirsDetenteAquatique() {
     <div>
       <div>
         <h2>Convention de Partenariat avec Les 3 Sources Belair</h2>
+        <img
+          src="https://cnexia.sharepoint.com/sites/CnexiaForEveryone/_api/web/GetFolderByServerRelativeUrl('/sites/CnexiaForEveryone/Assets/Carrousel')/Files('parc.png')/$value" alt="Convention Image"
+          width="350"
+          height="200"
+          style={{ display: 'block', margin: '0 auto' }}
+        />
         <p>
           <strong>Définition de la Convention:</strong> Cette convention établit un partenariat entre CNEXIA S.A.S et Les 3 Sources Belair dans le but d'offrir des avantages aux collaborateurs de CNEXIA lors de leur visite aux parcs aquatiques.
         </p>
@@ -17,6 +23,13 @@ export default function LoisirsDetenteAquatique() {
       </div>
       <div>
         <h2>Convention de Partenariat avec les Parcs Aquatiques</h2>
+        <img
+          src="https://cnexia.sharepoint.com/sites/CnexiaForEveryone/_api/web/GetFolderByServerRelativeUrl('/sites/CnexiaForEveryone/Assets/Carrousel')/Files('AQUA.png')/$value"
+          alt="Convention Image"
+          width="350"
+          height="200"
+          style={{ display: 'block', margin: '0 auto' }}
+        />
         <p>
           <strong>Définition de la Convention:</strong> Cette convention établit un partenariat entre CNEXIA et les parcs aquatiques Rim Aquatique et Les 3 Sources Belair. Son objectif est d'offrir des avantages aux collaborateurs de CNEXIA pour l'accès à ces parcs aquatiques.
         </p>
