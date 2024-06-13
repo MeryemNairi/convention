@@ -14,7 +14,7 @@ interface HotelsByCity {
 
 const Hotel = ({ name, stars, imageUrl }: HotelData) => {
     const renderStars = () => {
-        switch(stars) {
+        switch (stars) {
             case 5:
                 return <FiveStars />;
             case 4:
@@ -47,8 +47,8 @@ const HotelsVoyages = () => {
             { name: "Dunes d'Or Beach Club", stars: 4, imageUrl: 'https://cnexia.sharepoint.com/sites/CnexiaForEveryone/_api/web/GetFolderByServerRelativeUrl(\'/sites/CnexiaForEveryone/Assets\')/Files(\'DunesdOrBeaClub.jpg\')/$value' },
         ],
         Marrakech: [
-            { name: "Jaal Riad Resort", stars: 5, imageUrl: 'https://cnexia.sharepoint.com/sites/CnexiaForEveryone/_api/web/GetFolderByServerRelativeUrl(\'/sites/CnexiaForEveryone/Assets\')/Files(\'RAmadilBeachOcean.jpg\')/$value'},
-            { name: "Palais Medina Riad Resort", stars: 5, imageUrl: 'https://cnexia.sharepoint.com/sites/CnexiaForEveryone/_api/web/GetFolderByServerRelativeUrl(\'/sites/CnexiaForEveryone/Assets\')/Files(\'PalaisMedinaRiadResort.jpg\')/$value'},
+            { name: "Jaal Riad Resort", stars: 5, imageUrl: 'https://cnexia.sharepoint.com/sites/CnexiaForEveryone/_api/web/GetFolderByServerRelativeUrl(\'/sites/CnexiaForEveryone/Assets\')/Files(\'RAmadilBeachOcean.jpg\')/$value' },
+            { name: "Palais Medina Riad Resort", stars: 5, imageUrl: 'https://cnexia.sharepoint.com/sites/CnexiaForEveryone/_api/web/GetFolderByServerRelativeUrl(\'/sites/CnexiaForEveryone/Assets\')/Files(\'PalaisMedinaRiadResort.jpg\')/$value' },
         ],
         Fes: [
             { name: "Atlas Essaouira Riad Resort", stars: 5, imageUrl: 'https://cnexia.sharepoint.com/sites/CnexiaForEveryone/_api/web/GetFolderByServerRelativeUrl(\'/sites/CnexiaForEveryone/Assets\')/Files(\'AtlasEssaouiraRiadResort.jpg\')/$value' },
@@ -79,21 +79,32 @@ const HotelsVoyages = () => {
 
     return (
         <div>
-            <div >
-            <img className={styles.headerImage} src="https://cnexia.sharepoint.com/sites/CnexiaForEveryone/_api/web/GetFolderByServerRelativeUrl('/sites/CnexiaForEveryone/Assets')/Files('Gazel.png')/$value" alt="Gazelles Destination" />
+            <img
+                className={styles.headerImage}
+                src="https://cnexia.sharepoint.com/sites/CnexiaForEveryone/_api/web/GetFolderByServerRelativeUrl('/sites/CnexiaForEveryone/Assets')/Files('Gazel.png')/$value"
+                alt="Gazelles Destination"
+            />
+            <div className={styles.space}></div>
             <div className={styles.headerContent}>
-                <h2 >Partenariat 2022 avec GAZELLES DESTINATION</h2>
-                <p >
-                    Ensemble, CNEXIA et GAZELLES DESTINATION, agence de voyages affiliée à l'IATA, unissent leurs efforts pour offrir des voyages à prix réduits aux employés de CNEXIA.
-                </p>
-                <p>
-                    Tous les employés de CNEXIA peuvent profiter de cette offre en présentant simplement une preuve de leur emploi lors de la réservation d'un voyage.
-                </p>
-                <p>
-                    Pourcentage de Réduction: Les employés de CNEXIA bénéficient d'une réduction immédiate de 5 % sur le prix de base des voyages organisés par GAZELLES DESTINATION.
-                </p>
+                <h2 style={{ textAlign: 'center', width: '100%' }}>Partenariat 2022 avec GAZELLES DESTINATION</h2>
+                <div className={styles.space}></div>
+
+                <div style={{ fontSize: '15px', fontWeight: 600 }}>
+                    <p>
+                        Ensemble, CNEXIA et GAZELLES DESTINATION, agence de voyages affiliée à l'IATA, unissent leurs efforts pour offrir
+                        des voyages à prix réduits aux employés de CNEXIA.
+                    </p>
+                    <p>
+                        Tous les employés de CNEXIA peuvent profiter de cette offre en présentant simplement une preuve de leur emploi lors
+                        de la réservation d'un voyage.
+                    </p>
+                    <p>
+                        Pourcentage de Réduction: Les employés de CNEXIA bénéficient d'une réduction immédiate de 5 % sur le prix de base des
+                        voyages organisés par GAZELLES DESTINATION.
+                    </p>
+                </div>
             </div>
-        </div>
+            <div className={styles.space}></div>
             <div className={styles.buttonsContainer}>
                 <button className={styles.cityButton} onClick={() => handleCityChange('Agadir')}>Agadir</button>
                 <button className={styles.cityButton} onClick={() => handleCityChange('Marrakech')}>Marrakech</button>

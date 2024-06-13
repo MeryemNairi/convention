@@ -3,13 +3,13 @@ import * as React from 'react';
 export default function ImmobilierLogement() {
   return (
     <div>
-      <h2>Convention de partenariat de location d’appartements meublés</h2>
+      <h2 style={{ textAlign: 'center', width: '100%' }}>Convention de partenariat de location d’appartements meublés</h2>
       <img
-        src="https://cnexia.sharepoint.com/sites/CnexiaForEveryone/_api/web/GetFolderByServerRelativeUrl('/sites/CnexiaForEveryone/Assets/Carrousel')/Files('img1.png')/$value" width="350"
-        height="200"
+        src="https://cnexia.sharepoint.com/sites/CnexiaForEveryone/_api/web/GetFolderByServerRelativeUrl('/sites/CnexiaForEveryone/Assets')/Files('stayhere__1_-removebg-preview.png')/$value" width="350"
+        height="180"
         style={{ display: 'block', margin: '0 auto' }}
       />
-      <p>La Société STAY HERE, Société à responsabilité limitée au capital social de 100 000,00 DH, dont le siège est au 13, Rue Al Achaari, Bureau 07, Agdal, Rabat, immatriculée au registre du commerce de Rabat sous le numéro 145893, représentée par son gérant, ci-après dénommée « La Société », d'une part</p>
+      <p  style={{ fontSize: '15px', fontWeight: 600 }}>La Société STAY HERE, Société à responsabilité limitée au capital social de 100 000,00 DH, dont le siège est au 13, Rue Al Achaari, Bureau 07, Agdal, Rabat, immatriculée au registre du commerce de Rabat sous le numéro 145893, représentée par son gérant, ci-après dénommée « La Société », d'une part</p>
 
       <h3>1. Objet de la convention :</h3>
       <p>Par la présente convention, La Société s’engage à mettre à la disposition de l’Entreprise son parc immobilier au bénéfice de ses salariés et de ses partenaires, conformément aux conditions posées à l’article 4 ci-dessous. Il s’agit d'une location meublée, exclusivement à usage d'habitation.</p>

@@ -1,6 +1,5 @@
 import * as React from 'react';
 import HotelsVoyages from './HotelsVoyages';
-import ServicesBancaires from './ServicesBancaires';
 import ImmobilierLogement from './ImmobilierLogement';
 import SolutionsAssurance from './SolutionsAssurance';
 import MaisonArtCulinaire from './MaisonArtCulinaire';
@@ -22,15 +21,6 @@ const categories = [
           </clipPath>
         </defs>
       </svg>
-    )
-  },
-  {
-    id: 2,
-    name: 'Services Bancaires',
-    icon: (<svg width="30" height="30" viewBox="0 0 36 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M17.25 1.625L3 9.75V13H31.5V9.75M24 16.25V27.625H28.5V16.25M3 35.75H31.5V30.875H3M15 16.25V27.625H19.5V16.25M6 16.25V27.625H10.5V16.25H6Z" fill="#00966C" />
-    </svg>
-
     )
   },
   {
@@ -93,7 +83,7 @@ export default function Convention() {
 
 
   return (
-    <div style={{ display: 'flex', height: '100vh' }}>
+    <div style={{ display: 'flex', height: '100vh'  }}>
       <div style={{ width: '250px', borderRight: '1px solid #ccc', padding: '20px', backgroundColor: '#00966C' }}>
         <div onClick={handleLogoClick} style={{ cursor: 'pointer', marginBottom: '20px' }}>
           <svg width="172" height="60" viewBox="0 0 172 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -130,47 +120,58 @@ export default function Convention() {
       <div style={{ flex: 1, padding: '20px', overflowY: 'auto' }}>
         {categorySelected ? (
           <>
-            <h1>{selectedCategory}</h1>
+            <h1 style={{
+                textAlign: 'center',
+                width: '100%',
+                fontSize: '40',
+              }}>{selectedCategory}</h1>
             {selectedCategory === 'Hôtels  & Voyages' && <HotelsVoyages />}
-            {selectedCategory === 'Services Bancaires' && <ServicesBancaires />}
             {selectedCategory === 'Immobilier & Logement' && <ImmobilierLogement />}
             {selectedCategory === 'Solutions de Assurance' && <SolutionsAssurance />}
             {selectedCategory === 'Maison & Art Culinaire' && <MaisonArtCulinaire />}
             {selectedCategory === 'Loisirs & Détente Aquatique' && <LoisirsDetenteAquatique />}          </>
         ) : (
-          <div >
-            <h1><strong>Découvrez l'univers des conventions avec Cnexia</strong></h1>
-            <img src="https://cnexia.sharepoint.com/sites/CnexiaForEveryone/_api/web/GetFolderByServerRelativeUrl('/sites/CnexiaForEveryone/Assets')/Files('Les conventions- HRImag _ HOTELS, RESTAURANTS et INSTITUTIONS (1).jpg')/$value" alt="Convention Image" />
-            <p style={{
-              fontSize: '15px',
-              fontWeight: '400'
-            }}>
+          <div>
+            <h1 style={{
+                textAlign: 'center',
+                width: '100%',
+                fontSize: '40',
+              }}><strong>Découvrez l'univers des conventions avec Cnexia</strong></h1>
+            <img
+              src="https://cnexia.sharepoint.com/sites/CnexiaForEveryone/_api/web/GetFolderByServerRelativeUrl('/sites/CnexiaForEveryone/Assets')/Files('convention-removebg-preview.png')/$value"
+              alt="Convention Image"
+              style={{
+                display: 'block',
+                height: '300px',
+                margin: '0 auto',
+                objectFit: 'cover',
+                objectPosition: 'center'
+              }}
+            />
+            <p style={{ fontSize: '15px', fontWeight: 600 }}>
               Chers collaborateurs,<br /><br />
-
               Nous sommes heureux de vous informer que, grâce à des conventions établies avec différents établissements, vous pouvez désormais bénéficier de divers avantages et remises simplement en présentant votre badge professionnel. Ces conventions ont été mises en place pour vous offrir des opportunités supplémentaires de bien-être et d'économie au quotidien.<br /><br />
-
-              <h3>Comment bénéficier des avantages ?</h3>
-              <p>
-                1. Vérifiez les établissements partenaires<br />
-                2. Prenez connaissance des offres<br />
-                3. Présentez votre badge<br />
-              </p>
-
-              <h3>Avantages des conventions</h3>
-              <p>
-                · Économies : Profitez de réductions significatives sur une variété de produits et services, allant de l'alimentation aux loisirs, en passant par le bien-être et la technologie.<br />
-                · Simplicité : L'accès aux avantages est direct et ne nécessite aucune démarche compliquée. La présentation de votre badge suffit.<br />
-                · Variété : Les conventions couvrent un large éventail d'établissements et de services, vous permettant de trouver des offres pertinentes pour presque tous vos besoins.<br />
-              </p>
-
-              <h3>Important à retenir</h3>
-              <p>
-                · Les offres peuvent varier selon les périodes et les établissements. Il est donc crucial de vérifier les conditions spécifiques de chaque offre avant d'en profiter.<br />
-                · En cas de doute ou pour toute question relative aux conventions et aux avantages, n'hésitez pas à contacter le service des ressources humaines.
-              </p>
             </p>
 
+            <h3>Comment bénéficier des avantages ?</h3>
+            <ul style={{ fontSize: '15px', fontWeight: 400 }}>
+              <li>Vérifiez les établissements partenaires.</li>
+              <li>Prenez connaissance des offres.</li>
+              <li>Présentez votre badge.</li>
+            </ul>
 
+            <h3>Avantages des conventions</h3>
+            <ul style={{ fontSize: '15px', fontWeight: 400 }}>
+              <li><strong>Économies :</strong> Profitez de réductions significatives sur une variété de produits et services, allant de l'alimentation aux loisirs, en passant par le bien-être et la technologie.</li>
+              <li><strong>Simplicité :</strong> L'accès aux avantages est direct et ne nécessite aucune démarche compliquée. La présentation de votre badge suffit.</li>
+              <li><strong>Variété :</strong> Les conventions couvrent un large éventail d'établissements et de services, vous permettant de trouver des offres pertinentes pour presque tous vos besoins.</li>
+            </ul>
+
+            <h3>Important à retenir</h3>
+            <ul style={{ fontSize: '15px', fontWeight: 400 }}>
+              <li>Les offres peuvent varier selon les périodes et les établissements. Il est donc crucial de vérifier les conditions spécifiques de chaque offre avant d'en profiter.</li>
+              <li>En cas de doute ou pour toute question relative aux conventions et aux avantages, n'hésitez pas à contacter le service des ressources humaines.</li>
+            </ul>
           </div>
         )}
       </div>
